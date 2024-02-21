@@ -49,7 +49,7 @@ SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "https://github.com/kevinnadar22/URL-Shortener-V2"
 )  # for upstream repo
 # image when someone hit /start
-WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "https://graph.org/file/b2b7504687ec41b794b9a.jpg")
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "https://graph.org/file/8fa5b68cb072b77612aad.jpg")
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "1")), False
 )  # if true, urls will be bypassed
@@ -60,7 +60,7 @@ BASE_SITE = os.environ.get("BASE_SITE", "shortnfly.com")
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
     [int(i.strip()) for i in os.environ.get("CHANNEL_ID", "-1002087104095").split(" ")]
-    if os.environ.get("CHANNEL_ID")
+    if os.environ.get("CHANNEL_ID", "-1002087104095")
     else []
 )
 
