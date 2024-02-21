@@ -78,7 +78,7 @@ async def start(c: Client, m: Message):
     )
 
 
-@Client.on_message(filters.command('help') & filters.private)
+@Client.on_message(filters.command('help') & filters.private & filters.incoming)
 @private_use
 async def help_command(c, m: Message):
     s = HELP_MESSAGE.format(
@@ -90,7 +90,7 @@ async def help_command(c, m: Message):
     await m.reply_text(s, reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
 
 
-@Client.on_message(filters.command('features'))
+@Client.on_message(filters.command('features') & filters.private & filters.incoming)
 @private_use
 async def about_command(c, m: Message):
     reply_markup=ABOUT_REPLY_MARKUP
@@ -101,7 +101,7 @@ async def about_command(c, m: Message):
     await m.reply_text(ABOUT_TEXT.format(bot.mention(style='md')),reply_markup=reply_markup , disable_web_page_preview=True)
 
 
-@Client.on_message(filters.command("about"))
+@Client.on_message(filters.command("about") & filters.private & filters.incoming)
 @private_use
 async def about_command(c, m: Message):
     reply_markup = ABOUT_REPLY_MARKUP
@@ -154,7 +154,7 @@ async def restart_handler(c: Client, m: Message):
     )
 
 
-@Client.on_message(filters.command("stats") & filters.private)
+@Client.on_message(filters.command("stats") & filters.user(ADMINS) & filters.private)
 @private_use
 async def stats_handler(c: Client, m: Message):
     try:
