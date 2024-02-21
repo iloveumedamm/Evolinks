@@ -224,17 +224,16 @@ This is a helpful way to add a consistent footer to all of your messages. Enjoy!
 
 USERNAME_TEXT = """Current username: {username}
 
-To set the username that will be automatically replaced with other usernames in the post, use the following command:
+**Hello, I am ShortnFly.com, Bulk Link Converter Bot From Linked shortnfly.com Account,**
 
-`/username your_username`
+**🌟 Type** /channel (channel link or username)
 
-__(Note: Do not include the @ symbol in your username.)__
+**example:**
+/channel @shortnfly
+Or
+/channel https://t.me/shortnfly
 
-To remove the current username, use the following command:
-
-`/username remove`
-
-This is a helpful way to make sure that all of your posts have a consistent username. Enjoy! 📎"""
+**🤘 Hit** 👉 /features To Know More Features Of This Bot."""
 
 BANNER_IMAGE = """
 Usage: `/banner_image image_url` or reply to any Image with this command
