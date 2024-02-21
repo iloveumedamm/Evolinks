@@ -11,47 +11,58 @@ For example: <code>/batch -100xxx</code>
 I'll handle the rest and get those links shortened or converted in a short time! 💪
 """
 
-START_MESSAGE = """Hi there {} 
-
-Send me a link or post and I'll shorten it for you!
-
-To learn more about what I can do, just type /help.
-
-Method: {}
-Shortener website: {}
-"""
-
-HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
-
-I have a ton of handy features to help you out, such as:
-
-- [Hyperlink](https://t.me/{username}) support 🔗
-- Button conversion support 🔘
-- Domain inclusion and exclusion options 🌐
-- Header and footer text support 📝
-- Replace username function 📎
-- Banner image support 🖼️
-- Batch conversion for channel admins only 📊
-- Channel support for admins only 📢
-
-Useful commands:
-
-- /start: Start me up! You probably already used this.
-- /help: Send this message; I'll tell you more about myself!
-- /batch -100xxx: To shorten or convert all posts in your channel
-"""
-
-ABOUT_TEXT = """
-**My Details:**
-
-`🤖 Name:` ** {} **
+START_MESSAGE = '''**Hello, {}
+I Am ShortnFly.com, Bulk Link Converter. I Can Convert Links Directly From Your ShortnFly Account,
     
-`📝 Language:` [Python 3](https://www.python.org/)
-`🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/ask_admin001)
-`📢 Support:` [Talk Bot](https://t.me/ask_admin001)
-`🌐 Source Code:` [GitHub](https://github.com/kevinnadar22/URL-Shortener-V2/)
-"""
+1. Go To 👉 https://ShortnFly.com/member/tools/api  
+2. Than Copy API Key
+3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)**
+
+**/api(space)API Key 
+(See Example.👇)
+Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
+
+**➕ Hit** 👉 /Features To Know More Features Of This Bot.
+**➕ Hit** 👉 /channel Command To Get Help About Adding your channel to bot.
+**➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
+
+'''
+
+
+HELP_MESSAGE = '''**Hello, {}
+I Am ShortnFly.com, Bulk Link Converter Bot. I Can Convert Links Directly From Your ShortnFly.com Account,**
+    
+1. Go To 👉 https://ShortnFly.com/member/tools/api  
+2. Than **Copy API** Key
+3. Than Type **/api** than give a **single space** and than **paste** your **API** Key (**see example** to understand more...)
+
+**/api(space)API Key 
+(See Example.👇)
+Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
+
+**➕ Hit** 👉 /Features To Know More Features Of This Bot.
+**➕ Hit** 👉 /channel Command To Get Help About Adding your channel to bot.
+**➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
+'''
+
+ABOUT_TEXT = '''**Hey! I am ShortnFly.com Link Converter Bot.**
+
+**⚡Features⚡**
+
+• I can **Convert any** links or posts to your **ShortnFly.com** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
+
+• I Can **auto** add custom **footer text** to your every post. Hit 👉 /footer To know more...
+
+• I Can **auto** add custom **Header text** to your every post. Hit 👉 /Header To know more...
+
+• I Can **replace / remove** other's **channel links** with **your channel** link. Hit 👉 /channel To know More...
+
+• I Can **Automatically Replace** Your ***Banner** Image To images in the post. Hit  👉/Banner To Know More... 
+
+• **No** need to share **password or email** to convert links.**
+
+**Click On Custom Alias To Create Custom Link**
+'''
 
 
 METHOD_MESSAGE = """
