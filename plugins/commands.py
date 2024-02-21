@@ -79,6 +79,7 @@ async def start(c: Client, m: Message):
 
 
 @Client.on_message(filters.command('help') & filters.private)
+@private_use
 async def help_command(c, m: Message):
     s = HELP_MESSAGE.format(
                 firstname=temp.FIRST_NAME,
@@ -90,6 +91,7 @@ async def help_command(c, m: Message):
 
 
 @Client.on_message(filters.command('features'))
+@private_use
 async def about_command(c, m: Message):
     reply_markup=ABOUT_REPLY_MARKUP
 
