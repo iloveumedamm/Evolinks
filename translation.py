@@ -167,11 +167,7 @@ USER_ABOUT_MESSAGE = """
 
 - 🌐 Shortener website: {base_site}
 
-- 🧰 Method: {method}
-
 - 🔌 {base_site} API: {shortener_api}
-
-- 💾 Mdisk API: {mdisk_api}
 
 - 📎 Username: @{username}
 
