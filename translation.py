@@ -22,7 +22,7 @@ I Am ShortnFly.com, Bulk Link Converter. I Can Convert Links Directly From Your 
 (See Example.👇)
 Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
-**➕ Hit** 👉 /Features To Know More Features Of This Bot.
+**➕ Hit** 👉 /features To Know More Features Of This Bot.
 **➕ Hit** 👉 /channel Command To Get Help About Adding your channel to bot.
 **➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
 
@@ -40,7 +40,7 @@ I Am ShortnFly.com, Bulk Link Converter Bot. I Can Convert Links Directly From Y
 (See Example.👇)
 Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
-**➕ Hit** 👉 /Features To Know More Features Of This Bot.
+**➕ Hit** 👉 /features To Know More Features Of This Bot.
 **➕ Hit** 👉 /channel Command To Get Help About Adding your channel to bot.
 **➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
 '''
