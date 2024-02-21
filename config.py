@@ -77,5 +77,5 @@ FORWARD_MESSAGE = is_enabled(
 
 
 WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "True"), True)
-PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "240"))
+PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "3600"))
 PORT = int(os.environ.get("PORT", "8000"))
