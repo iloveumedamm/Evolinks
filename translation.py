@@ -99,46 +99,34 @@ Here is a list of the channels:
 {channels}"""
 
 
-HELP_REPLY_MARKUP = InlineKeyboardMarkup(
+HELP_REPLY_MARKUP = InlineKeyboardMarkup([
+
     [
-        [
-            InlineKeyboardButton("Methods", callback_data="method_command"),
-            InlineKeyboardButton("Batch", callback_data="cbatch_command"),
-        ],
-        [
-            InlineKeyboardButton("Custom Alias", callback_data="alias_conf"),
-            InlineKeyboardButton("Admins", callback_data="admins_list"),
-        ],
-        [
-            InlineKeyboardButton("Channels", callback_data="channels_list"),
-            InlineKeyboardButton("Home", callback_data="start_command"),
-        ],
-    ]
-)
+        InlineKeyboardButton('More Features', callback_data=f'about_command')
+        
+    ],
 
 
-ABOUT_REPLY_MARKUP = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton("Home", callback_data="start_command"),
-            InlineKeyboardButton("Help", callback_data="help_command"),
-        ],
-        [InlineKeyboardButton("Close", callback_data="delete")],
-    ]
-)
+])
 
-START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup(
+
+ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
+
     [
-        [
-            InlineKeyboardButton("Help", callback_data="help_command"),
-            InlineKeyboardButton("About", callback_data="about_command"),
-        ],
-        [
-            InlineKeyboardButton("Method", callback_data="method_command"),
-            InlineKeyboardButton("Close", callback_data="delete"),
-        ],
+        InlineKeyboardButton('Custom Alias', callback_data=f'alias_conf')
+        
+    ],
+
+
+])
+
+
+START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
+    [
+        InlineKeyboardButton('Get Api From ShortnFly.com', url=f'https://ShortnFly.com/member/tools/api')
     ]
-)
+])
+
 
 METHOD_REPLY_MARKUP = InlineKeyboardMarkup(
     [
@@ -158,9 +146,12 @@ METHOD_REPLY_MARKUP = InlineKeyboardMarkup(
     ]
 )
 
-BACK_REPLY_MARKUP = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("Back", callback_data="help_command")]]
-)
+BACK_REPLY_MARKUP = InlineKeyboardMarkup([
+    [
+        InlineKeyboardButton('Back', callback_data=f'help_command')
+    ],
+
+])
 
 USER_ABOUT_MESSAGE = """
 🔧 Here are the current settings for this bot:
@@ -192,15 +183,13 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 Current Mdisk API: `{}`"""
 
 SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
-`/shortener_api [api]`
+`/set_api [api]`
             
-Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
+Ex: `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
-Current Website: {base_site}
+Get API From [{base_site}](https://shortnfly.com)
 
-To change your Shortener Website: /base_site
-
-Current Shortener API: `{shortener_api}`"""
+Current {base_site} API: `{shortener_api}`"""
 
 HEADER_MESSAGE = """📝 To set the header text for every message caption or text, just reply with the text you want to use. You can use \\n to add a line break.
 
