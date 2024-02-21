@@ -16,29 +16,29 @@ def is_enabled(value, default):
 
 # Mandatory variables for the bot to start
 # API ID from https://my.telegram.org/auth
-API_ID = int(os.environ.get("API_ID"))
+API_ID = int(os.environ.get("API_ID", "24010108"))
 # API Hash from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")  # Bot token from @BotFather
+API_HASH = os.environ.get("API_HASH", "8d89700b2fc09a3aa6c906cbed65b040")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6257817586:AAHiHfYz_Ykn_n1QHgE7o1aRdOn5Gxg6M4U")  # Bot token from @BotFather
 ADMINS = (
-    [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
+    [int(i.strip()) for i in os.environ.get("ADMINS", "5791145987").split(",")]
     if os.environ.get("ADMINS")
     else []
 )
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", None
+    "DATABASE_URL", "mongodb+srv://lajihi2115:lgAEiuZHs917nZgy@cluster0.lx88eg8.mongodb.net/?retryWrites=true&w=majority"
 )  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID"))  # id of the owner
+OWNER_ID = int(os.environ.get("OWNER_ID", "5791145987"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "0")
+    os.environ.get("LOG_CHANNEL", "-1002002097084")
 )  # log channel for information about users
 UPDATE_CHANNEL = int(os.environ.get(
-    "UPDATE_CHANNEL", False))  # For Force Subscription
+    "UPDATE_CHANNEL", "-1001932915263"))  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "False")), False
 )  # true if forward should be avoided
@@ -49,17 +49,17 @@ SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "https://github.com/kevinnadar22/URL-Shortener-V2"
 )  # for upstream repo
 # image when someone hit /start
-WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "https://graph.org/file/b2b7504687ec41b794b9a.jpg")
 LINK_BYPASS = is_enabled(
-    (os.environ.get("LINK_BYPASS", "False")), False
+    (os.environ.get("LINK_BYPASS", "1")), False
 )  # if true, urls will be bypassed
 # your shortener site domain
-BASE_SITE = os.environ.get("BASE_SITE", "droplink.co")
+BASE_SITE = os.environ.get("BASE_SITE", "shortnfly.com")
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
-    [int(i.strip()) for i in os.environ.get("CHANNEL_ID").split(" ")]
+    [int(i.strip()) for i in os.environ.get("CHANNEL_ID", "-1002087104095").split(" ")]
     if os.environ.get("CHANNEL_ID")
     else []
 )
@@ -72,7 +72,7 @@ DE_BYPASS = (
 DE_BYPASS.append("mdisk.me")
 
 FORWARD_MESSAGE = is_enabled(
-    (os.environ.get("FORWARD_MESSAGE", "False")), False
+    (os.environ.get("FORWARD_MESSAGE", "1")), False
 )  # true if forwardd message to converted by reposting the post
 
 
