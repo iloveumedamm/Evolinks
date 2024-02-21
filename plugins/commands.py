@@ -78,21 +78,25 @@ async def start(c: Client, m: Message):
     )
 
 
-@Client.on_message(filters.command("help") & filters.private)
-@private_use
+@Client.on_message(filters.command('help') & filters.private)
 async def help_command(c, m: Message):
     s = HELP_MESSAGE.format(
-        firstname=temp.FIRST_NAME,
-        username=temp.BOT_USERNAME,
-        repo=SOURCE_CODE,
-        owner="@ask_admin001",
-    )
+                firstname=temp.FIRST_NAME,
+                username=temp.BOT_USERNAME)
 
     if WELCOME_IMAGE:
-        return await m.reply_photo(
-            photo=WELCOME_IMAGE, caption=HELP_MESSAGE, reply_markup=HELP_REPLY_MARKUP
-        )
+        return await m.reply_photo(photo=WELCOME_IMAGE, caption=s, reply_markup=HELP_REPLY_MARKUP)
     await m.reply_text(s, reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
+
+
+@Client.on_message(filters.command('features'))
+async def about_command(c, m: Message):
+    reply_markup=ABOUT_REPLY_MARKUP
+
+    bot = await c.get_me()
+    if WELCOME_IMAGE:
+        return await m.reply_photo(photo=WELCOME_IMAGE, caption=ABOUT_TEXT.format(bot.mention(style='md')), reply_markup=reply_markup)
+    await m.reply_text(ABOUT_TEXT.format(bot.mention(style='md')),reply_markup=reply_markup , disable_web_page_preview=True)
 
 
 @Client.on_message(filters.command("about"))
@@ -206,7 +210,7 @@ async def mdisk_api_handler(bot, message: Message):
         await message.reply(f"Mdisk API updated successfully to {api}")
 
 
-@Client.on_message(filters.command("shortener_api") & filters.private)
+@Client.on_message(filters.command("api") & filters.private)
 @private_use
 async def shortener_api_handler(bot, m: Message):
     user_id = m.from_user.id
