@@ -26,7 +26,7 @@ ADMINS = (
     else []
 )
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "1")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "bzearn")
 DATABASE_URL = os.environ.get(
     "DATABASE_URL", "mongodb+srv://lajihi2115:lgAEiuZHs917nZgy@cluster0.lx88eg8.mongodb.net/?retryWrites=true&w=majority"
 )  # mongodb uri from https://www.mongodb.com/
