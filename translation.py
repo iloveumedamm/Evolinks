@@ -12,9 +12,9 @@ I'll handle the rest and get those links shortened or converted in a short time!
 """
 
 START_MESSAGE = '''**Hello, {}
-I Am ShortnFly.com, Bulk Link Converter. I Can Convert Links Directly From Your ShortnFly Account,
+I Am bzearn.com, Bulk Link Converter. I Can Convert Links Directly From Your bzearn Account,
     
-1. Go To 👉 https://ShortnFly.com/member/tools/api  
+1. Go To 👉 https://bzearn.com/member/tools/api  
 2. Than Copy API Key
 3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)**
 
@@ -30,9 +30,9 @@ Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
 
 HELP_MESSAGE = '''**Hello, {}
-I Am ShortnFly.com, Bulk Link Converter Bot. I Can Convert Links Directly From Your ShortnFly.com Account,**
+I Am bzearn.com, Bulk Link Converter Bot. I Can Convert Links Directly From Your bzearn.com Account,**
     
-1. Go To 👉 https://ShortnFly.com/member/tools/api  
+1. Go To 👉 https://bzearn.com/member/tools/api  
 2. Than **Copy API** Key
 3. Than Type **/api** than give a **single space** and than **paste** your **API** Key (**see example** to understand more...)
 
@@ -45,11 +45,11 @@ Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 **➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
 '''
 
-ABOUT_TEXT = '''**Hey! I am ShortnFly.com Link Converter Bot.**
+ABOUT_TEXT = '''**Hey! I am bzearn.com Link Converter Bot.**
 
 **⚡Features⚡**
 
-• I can **Convert any** links or posts to your **ShortnFly.com** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
+• I can **Convert any** links or posts to your **bzearn.com** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
 
 • I Can **auto** add custom **footer text** to your every post. Hit 👉 /footer To know more...
 
@@ -123,7 +123,7 @@ ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
 
 START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('Get Api From ShortnFly.com', url=f'https://ShortnFly.com/member/tools/api')
+        InlineKeyboardButton('Get Api From bzearn.com', url=f'https://bzearn.com/member/tools/api')
     ]
 ])
 
@@ -209,14 +209,14 @@ This is a helpful way to add a consistent footer to all of your messages. Enjoy!
 
 USERNAME_TEXT = """Current username: {username}
 
-**Hello, I am ShortnFly.com, Bulk Link Converter Bot From Linked shortnfly.com Account,**
+**Hello, I am bzearn.com, Bulk Link Converter Bot From Linked bzearn.com Account,**
 
 **🌟 Type** /channel (channel link or username)
 
 **example:**
-/channel @shortnfly
+/channel @bzearn
 Or
-/channel https://t.me/shortnfly
+/channel https://t.me/bzearn
 
 **🤘 Hit** 👉 /features To Know More Features Of This Bot."""
 
