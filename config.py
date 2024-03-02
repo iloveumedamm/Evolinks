@@ -28,7 +28,7 @@ ADMINS = (
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "1")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "mongodb+srv://kullaranmol28:<password>@cluster0.lxore94.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "DATABASE_URL", "mongodb+srv://kullaranmol28:NLMoNZBZchiHtNnr@cluster0.lxore94.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )  # mongodb uri from https://www.mongodb.com/
 OWNER_ID = int(os.environ.get("OWNER_ID", "5791145987"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
@@ -54,7 +54,7 @@ LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "0")), False
 )  # if true, urls will be bypassed
 # your shortener site domain
-BASE_SITE = os.environ.get("BASE_SITE", "bzearn.com")
+BASE_SITE = os.environ.get("BASE_SITE", "Evolinks.in")
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
