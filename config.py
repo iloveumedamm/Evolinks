@@ -26,7 +26,7 @@ ADMINS = (
     else []
 )
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "bzearn")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "1")
 DATABASE_URL = os.environ.get(
     "DATABASE_URL", "mongodb+srv://kesap49607:SOWKddmNSpgrZyCk@cluster0.grdjyrl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )  # mongodb uri from https://www.mongodb.com/
@@ -51,7 +51,7 @@ SOURCE_CODE = os.environ.get(
 # image when someone hit /start
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")
 LINK_BYPASS = is_enabled(
-    (os.environ.get("LINK_BYPASS", "1")), False
+    (os.environ.get("LINK_BYPASS", "0")), False
 )  # if true, urls will be bypassed
 # your shortener site domain
 BASE_SITE = os.environ.get("BASE_SITE", "bzearn.com")
