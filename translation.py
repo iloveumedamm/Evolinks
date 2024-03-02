@@ -12,9 +12,9 @@ I'll handle the rest and get those links shortened or converted in a short time!
 """
 
 START_MESSAGE = '''**Hello, {}
-I Am bzearn.com, Bulk Link Converter. I Can Convert Links Directly From Your bzearn Account,
+I Am evolinks.in, Bulk Link Converter. I Can Convert Links Directly From Your bzearn Account,
     
-1. Go To 👉 https://bzearn.com/member/tools/api  
+1. Go To 👉 https://evolinks.in/member/tools/api  
 2. Than Copy API Key
 3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)**
 
@@ -30,7 +30,7 @@ Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
 
 HELP_MESSAGE = '''**Hello, {}
-I Am bzearn.com, Bulk Link Converter Bot. I Can Convert Links Directly From Your bzearn.com Account,**
+I Am evolinks.in, Bulk Link Converter Bot. I Can Convert Links Directly From Your evolinks.in Account,**
     
 1. Go To 👉 https://bzearn.com/member/tools/api  
 2. Than **Copy API** Key
@@ -49,7 +49,7 @@ ABOUT_TEXT = '''**Hey! I am bzearn.com Link Converter Bot.**
 
 **⚡Features⚡**
 
-• I can **Convert any** links or posts to your **bzearn.com** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
+• I can **Convert any** links or posts to your **evolinks.in** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
 
 • I Can **auto** add custom **footer text** to your every post. Hit 👉 /footer To know more...
 
@@ -123,7 +123,7 @@ ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
 
 START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('Get Api From bzearn.com', url=f'https://bzearn.com/member/tools/api')
+        InlineKeyboardButton('Get Api From evolinks.in', url=f'https://evolinks.in/member/tools/api')
     ]
 ])
 
@@ -183,7 +183,7 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 Current Mdisk API: `{}`"""
 
 SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
-`/set_api [api]`
+`/api [api]`
             
 Ex: `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
@@ -214,7 +214,7 @@ USERNAME_TEXT = """Current username: {username}
 **🌟 Type** /channel (channel link or username)
 
 **example:**
-/channel @bzearn
+/channel @evolinks
 Or
 /channel https://t.me/bzearn
 
