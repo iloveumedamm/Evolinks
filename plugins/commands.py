@@ -92,7 +92,7 @@ async def help_command(c, m: Message):
 
 @Client.on_message(filters.command('features') & filters.private & filters.incoming)
 @private_use
-async def about_command(c, m: Message):
+async def feature_command(c, m: Message):
     reply_markup=ABOUT_REPLY_MARKUP
 
     bot = await c.get_me()
