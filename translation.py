@@ -45,7 +45,7 @@ Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 **➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
 '''
 
-ABOUT_TEXT = '''**Hey! I am bzearn.com Link Converter Bot.**
+ABOUT_TEXT = '''**Hey! I am evolinks.in Link Converter Bot.**
 
 **⚡Features⚡**
 
