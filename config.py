@@ -30,7 +30,7 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", "1")
 DATABASE_URL = os.environ.get(
     "DATABASE_URL", "mongodb+srv://kullaranmol28:NLMoNZBZchiHtNnr@cluster0.lxore94.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID", "5791145987"))  # id of the owner
+OWNER_ID = int(os.environ.get("OWNER_ID", "2070212844"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
