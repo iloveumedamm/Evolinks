@@ -174,7 +174,6 @@ async def stats_handler(c: Client, m: Message):
 **- Total Users:** `{total_users}`
 **- Total Posts Sent:** `{link_stats['posts']}`
 **- Total Links Shortened:** `{link_stats['links']}`
-**- Total Mdisk Links Shortened:** `{link_stats['mdisk_links']}`
 **- Total Shortener Links Shortened:** `{link_stats['shortener_links']}`
 **- Used Storage:** `{size}`
 **- Total Free Storage:** `{free}`
@@ -198,7 +197,7 @@ async def log_file(bot, message):
         await message.reply(str(e))
 
 
-@Client.on_message(filters.command("mdisk_api") & filters.private)
+#@Client.on_message(filters.command("mdisk_api") & filters.private)
 @private_use
 async def mdisk_api_handler(bot, message: Message):
     user_id = message.from_user.id
@@ -326,7 +325,7 @@ async def banner_image_handler(bot, m: Message):
                 return await m.reply_text("Image URL is Invalid")
 
 
-@Client.on_message(filters.command("base_site") & filters.private)
+#@Client.on_message(filters.command("base_site") & filters.private)
 @private_use
 async def base_site_handler(bot, m: Message):
     user_id = m.from_user.id
@@ -353,10 +352,9 @@ async def me_handler(bot, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
     res = USER_ABOUT_MESSAGE.format(
-        base_site=user["base_site"],
-        method=user["method"],
+        
         shortener_api=user["shortener_api"],
-        mdisk_api=user["mdisk_api"],
+       
         username=user["username"],
         header_text=user["header_text"].replace(r"\n", "\n")
         if user["header_text"]
