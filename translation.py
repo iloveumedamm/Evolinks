@@ -187,7 +187,7 @@ SHORTENER_API_MESSAGE = """To add or update your Shortner Website API,
             
 Ex: `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
-Get API From [{base_site}](https://shortnfly.com)
+Get API From [{base_site}](https://evolinks.in)
 
 Current {base_site} API: `{shortener_api}`"""
 
@@ -209,7 +209,7 @@ This is a helpful way to add a consistent footer to all of your messages. Enjoy!
 
 USERNAME_TEXT = """Current username: {username}
 
-**Hello, I am bzearn.com, Bulk Link Converter Bot From Linked bzearn.com Account,**
+**Hello, I am evolinks, Bulk Link Converter Bot From Linked evolinks.in Account,**
 
 **🌟 Type** /channel (channel link or username)
 
