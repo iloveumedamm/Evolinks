@@ -216,7 +216,7 @@ USERNAME_TEXT = """Current username: {username}
 **example:**
 /channel @evolinks
 Or
-/channel https://t.me/bzearn
+/channel https://t.me/evolinks
 
 **🤘 Hit** 👉 /features To Know More Features Of This Bot."""
 
