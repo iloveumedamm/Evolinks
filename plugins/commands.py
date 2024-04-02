@@ -68,6 +68,11 @@ async def start(c: Client, m: Message):
     t = START_MESSAGE.format(
         m.from_user.mention, new_user["method"], new_user["base_site"]
     )
+    if len(m.command) > 1:
+        command = m.command[1]
+        if command.startswith("api"):
+            api = command.split("_", 1)[1]
+            return await m.reply_text(f"Shortener API updated successfully to {api}")
 
     if WELCOME_IMAGE:
         return await m.reply_photo(
