@@ -72,6 +72,9 @@ async def start(c: Client, m: Message):
         command = m.command[1]
         if command.startswith("api"):
             api = command.split("_", 1)[1]
+            user_id = m.from_user.id
+            user = await get_user(user_id)
+            await update_user_info(user_id, {"shortener_api": api})
             return await m.reply_text(f"Shortener API updated successfully to {api}")
 
     if WELCOME_IMAGE:
