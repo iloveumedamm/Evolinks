@@ -38,7 +38,7 @@ LOG_CHANNEL = int(
     os.environ.get("LOG_CHANNEL", "-1001996495012")
 )  # log channel for information about users
 UPDATE_CHANNEL = int(os.environ.get(
-    "UPDATE_CHANNEL", "-1001955133934"))  # For Force Subscription
+    "UPDATE_CHANNEL", ""))  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "False")), False
 )  # true if forward should be avoided
